@@ -38,4 +38,4 @@ while guess != number and guess != "exit":
         if trials == 1:
             print("You guessed it right away!")
         else:
-            print("You guess it in " + str(trials) + " trials")
+            print("You guessed it in " + str(trials) + " trials")
