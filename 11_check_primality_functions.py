@@ -9,11 +9,10 @@ def is_prime():
 
     list_of_divisors = [divisor for divisor in range(2, number) if number % divisor == 0]
 
-    if number > 1:
-        if len(list_of_divisors) == 0:
-            print(number, "is prime")
-        else:
-            print(number, "is not prime")
+    if number > 1 and len(list_of_divisors) == 0:
+        print(number, "is prime")
+    elif number > 1 and len(list_of_divisors) != 0:
+        print(number, "is not prime")
     else:
         print("Something is wrong here")
         
